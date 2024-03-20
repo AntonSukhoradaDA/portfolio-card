@@ -1,3 +1,5 @@
 Anton Sukhorada Portfolio
 
-asukhorada.dev
+<a href="https://asukhorada.dev" target="_blank">
+    asukhorada.dev
+</a>
