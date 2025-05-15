@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const roboto = JetBrains_Mono({
-    weight: "400",
+const inter = Inter({
+    weight: "500",
     subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-    title: "Anton Sukhorada | Software Engineer",
+    title: "Anton Sukhorada",
     description: "Anton Sukhorada Developer From Kyiv",
     icons: {
         icon: "/icon.png",
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-        <body className={roboto.className}>{children}</body>
+        <body className={inter.className}>{children}</body>
         </html>
     );
 }
