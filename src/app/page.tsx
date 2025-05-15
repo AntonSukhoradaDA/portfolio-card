@@ -3,7 +3,7 @@
 export default function Home() {
     return (
         <div
-            className="bg-white h-screen overflow-hidden flex flex-col w-full tracking-tighter text-black text-2xl lg:pt-12 lg:pl-20 p-4 gap-8">
+            className="bg-white h-screen overflow-hidden flex flex-col w-full tracking-tighter text-black lg:text-2xl text-lg lg:pt-12 lg:pl-20 p-4 gap-8">
             <div className="flex items-start justify-center w-full flex-col">
                 <h1>Anton Sukhorada</h1>
                 <h2>senior software engineer</h2>
