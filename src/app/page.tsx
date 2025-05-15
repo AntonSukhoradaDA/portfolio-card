@@ -38,10 +38,10 @@ export default function Home() {
                     <a href="https://github.com/AntonSukhoradaDA" target="_blank">
                         Github
                     </a>
-                    <a href="https://instagram.com/asuhorada" target="_blank">
+                    <a href="https://instagram.com/asukhorada" target="_blank">
                         Instagram
                     </a>
-                    <a href="https://linkedin.com/in/suhorada-anton/" target="_blank">
+                    <a href="https://linkedin.com/in/sukhorada-anton/" target="_blank">
                         Linkedin
                     </a>
                 </div>
