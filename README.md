@@ -1,5 +1,3 @@
-Anton Sukhorada Portfolio
+# portfolio-card
 
- <a href="https://www.asukhorada.dev" target="_blank">
-              antonsukhorada.dev
-            </a>
+Personal site — [antonsukhorada.dev](https://antonsukhorada.dev). Built with Next.js and Tailwind, deployed to GitHub Pages.

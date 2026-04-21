@@ -1,1 +1,80 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stagger > * {
+  opacity: 0;
+  animation: fade-up 500ms ease-out forwards;
+  animation-delay: calc(80ms * (var(--i, 0)));
+}
+.stagger > *:nth-child(1) {
+  --i: 0;
+}
+.stagger > *:nth-child(2) {
+  --i: 1;
+}
+.stagger > *:nth-child(3) {
+  --i: 2;
+}
+.stagger > *:nth-child(4) {
+  --i: 3;
+}
+.stagger > *:nth-child(5) {
+  --i: 4;
+}
+.stagger > *:nth-child(6) {
+  --i: 5;
+}
+.stagger > *:nth-child(7) {
+  --i: 6;
+}
+.stagger > *:nth-child(n + 8) {
+  --i: 7;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .stagger > * {
+    opacity: 1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+p {
+  text-wrap: balance;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
+}
+.dark ::selection {
+  background: #fff;
+  color: #000;
+}
