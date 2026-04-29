@@ -15,6 +15,29 @@ export default function Home() {
         <p>currently i'm working as senior full-stack engineer</p>
         <p>and living in Kyiv.</p>
       </div>
+      <p>
+        i'm also building{" "}
+        <a
+          className={linkClass}
+          href="https://www.joinsona.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Sona app"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 120 120"
+            className="inline-block w-[0.9em] h-[0.9em] rounded-[0.2em] align-[-0.1em] mr-1"
+            aria-hidden="true"
+          >
+            <rect width="120" height="120" rx="28" fill="#F0EEE6" />
+            <circle cx="60" cy="60" r="48" fill="#D97757" opacity="0.12" />
+            <path d="M 22 74 Q 60 30 98 74" stroke="#D97757" strokeWidth="7" fill="none" strokeLinecap="round" />
+          </svg>
+          sona
+        </a>{" "}
+        - a quiet space for when your mind is loud.
+      </p>
       <ul className="flex flex-col gap-2 lg:gap-3 list-none">
         <li>
           i share my life on{" "}
