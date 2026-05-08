@@ -30,9 +30,9 @@ export default function Home() {
             className="inline-block w-[0.9em] h-[0.9em] rounded-[0.2em] align-[-0.1em] mr-1"
             aria-hidden="true"
           >
-            <rect width="120" height="120" rx="28" fill="#F0EEE6" />
-            <circle cx="60" cy="60" r="48" fill="#D97757" opacity="0.12" />
-            <path d="M 22 74 Q 60 30 98 74" stroke="#D97757" strokeWidth="7" fill="none" strokeLinecap="round" />
+            <rect width="120" height="120" rx="28" fill="#000000" />
+            <circle cx="60" cy="60" r="48" fill="#ffffff" opacity="0.06" />
+            <path d="M 22 74 Q 60 30 98 74" stroke="#ffffff" strokeWidth="7" fill="none" strokeLinecap="round" />
           </svg>
           sona
         </a>{" "}
