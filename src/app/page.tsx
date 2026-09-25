@@ -1,3 +1,8 @@
+import ConsoleNote from "@/components/ConsoleNote";
+import DiceIcon from "@/components/DiceIcon";
+import ScrambleText from "@/components/ScrambleText";
+import Signature from "@/components/Signature";
+
 const linkClass =
   "underline underline-offset-4 hover:underline-offset-[6px] hover:opacity-60 transition-all focus-visible:outline-none focus-visible:decoration-2 dark:text-white";
 
@@ -5,7 +10,9 @@ export default function Home() {
   return (
     <main className="stagger flex flex-col max-w-2xl text-neutral-900 dark:text-neutral-200 tracking-tighter lg:text-2xl text-lg lg:pt-12 lg:pl-16 pt-12 p-4 gap-5 lg:gap-8">
       <div className="flex flex-col gap-1.5">
-        <h1>Anton Sukhorada</h1>
+        <h1>
+          <ScrambleText text="Anton Sukhorada" />
+        </h1>
         <p>senior software engineer</p>
       </div>
       <p>
@@ -24,20 +31,7 @@ export default function Home() {
           rel="noopener noreferrer"
           aria-label="Monomakh app"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            className="dice inline-block w-[0.9em] h-[0.9em] rounded-[0.2em] align-[-0.1em] mr-1"
-            aria-hidden="true"
-          >
-            <rect width="32" height="32" rx="7" fill="#1F4FD1" />
-            <rect x="6" y="6" width="20" height="20" rx="5" fill="#F5C518" />
-            <circle cx="11" cy="11" r="2.3" fill="#1B1A17" />
-            <circle cx="21" cy="11" r="2.3" fill="#1B1A17" />
-            <circle cx="16" cy="16" r="2.576" fill="#D2372B" />
-            <circle cx="11" cy="21" r="2.3" fill="#1B1A17" />
-            <circle cx="21" cy="21" r="2.3" fill="#1B1A17" />
-          </svg>
+          <DiceIcon className="dice inline-block w-[0.9em] h-[0.9em] rounded-[0.2em] align-[-0.1em] mr-1" />
           monomakh
         </a>{" "}
         - an online property-trading board game to play with friends.
@@ -92,8 +86,14 @@ export default function Home() {
       </ul>
       <div className="flex flex-col gap-1">
         <p>cheers,</p>
-        <p>Anton</p>
+        <p>
+          <Signature name="Anton" />
+        </p>
+        <p className="ink" aria-hidden="true">
+          p.s. invisible ink. you found it.
+        </p>
       </div>
+      <ConsoleNote />
     </main>
   );
 }
