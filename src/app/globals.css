@@ -43,6 +43,34 @@
   --i: 7;
 }
 
+/* Monomakh die: hop, tumble once, land with a squash. */
+@keyframes dice-roll {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  35% {
+    transform: translateY(-0.4em) rotate(200deg);
+  }
+  65% {
+    transform: translateY(0) rotate(360deg) scale(1.12, 0.88);
+  }
+  82% {
+    transform: translateY(-0.06em) rotate(360deg) scale(0.98, 1.02);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg) scale(1);
+  }
+}
+
+.dice {
+  transform-origin: center;
+  will-change: transform;
+}
+a:hover .dice,
+a:focus-visible .dice {
+  animation: dice-roll 650ms cubic-bezier(0.3, 0.7, 0.3, 1) 1;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

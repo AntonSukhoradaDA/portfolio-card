@@ -27,7 +27,7 @@ export default function Home() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 32 32"
-            className="inline-block w-[0.9em] h-[0.9em] rounded-[0.2em] align-[-0.1em] mr-1"
+            className="dice inline-block w-[0.9em] h-[0.9em] rounded-[0.2em] align-[-0.1em] mr-1"
             aria-hidden="true"
           >
             <rect width="32" height="32" rx="7" fill="#1F4FD1" />
