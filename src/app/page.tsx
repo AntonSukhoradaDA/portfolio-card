@@ -1,7 +1,4 @@
-import ConsoleNote from "@/components/ConsoleNote";
 import DiceIcon from "@/components/DiceIcon";
-import ScrambleText from "@/components/ScrambleText";
-import Signature from "@/components/Signature";
 
 const linkClass =
   "underline underline-offset-4 hover:underline-offset-[6px] hover:opacity-60 transition-all focus-visible:outline-none focus-visible:decoration-2 dark:text-white";
@@ -10,9 +7,7 @@ export default function Home() {
   return (
     <main className="stagger flex flex-col max-w-2xl text-neutral-900 dark:text-neutral-200 tracking-tighter lg:text-2xl text-lg lg:pt-12 lg:pl-16 pt-12 p-4 gap-5 lg:gap-8">
       <div className="flex flex-col gap-1.5">
-        <h1>
-          <ScrambleText text="Anton Sukhorada" />
-        </h1>
+        <h1>Anton Sukhorada</h1>
         <p>senior software engineer</p>
       </div>
       <p>
@@ -31,7 +26,7 @@ export default function Home() {
           rel="noopener noreferrer"
           aria-label="Monomakh app"
         >
-          <DiceIcon className="dice inline-block w-[0.9em] h-[0.9em] rounded-[0.2em] align-[-0.1em] mr-1" />
+          <DiceIcon className="dice inline-block w-[0.9em] h-[0.9em] align-[-0.1em] mr-1" />
           monomakh
         </a>{" "}
         - an online property-trading board game to play with friends.
@@ -86,14 +81,8 @@ export default function Home() {
       </ul>
       <div className="flex flex-col gap-1">
         <p>cheers,</p>
-        <p>
-          <Signature name="Anton" />
-        </p>
-        <p className="ink" aria-hidden="true">
-          p.s. invisible ink. you found it.
-        </p>
+        <p>Anton</p>
       </div>
-      <ConsoleNote />
     </main>
   );
 }

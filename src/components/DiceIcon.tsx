@@ -23,8 +23,9 @@ const FACES: Pip[][] = [
   ["tl", "tr", "ml", "mr", "bl", "br"],
 ];
 
-// The Monomakh die. The CSS hover animation tumbles it; while it is mid-air
-// we swap the face, so every roll lands on a random number.
+// The Monomakh die, drawn in the current text colour so it follows the theme.
+// The CSS hover animation tumbles it; while it is mid-air we swap the face,
+// so every roll lands on a random number.
 export default function DiceIcon({ className }: { className?: string }) {
   const [face, setFace] = useState(4);
   const timer = useRef<number | null>(null);
@@ -54,12 +55,10 @@ export default function DiceIcon({ className }: { className?: string }) {
       aria-hidden="true"
       onAnimationStart={onRoll}
     >
-      <rect width="32" height="32" rx="7" fill="#1F4FD1" />
-      <rect x="6" y="6" width="20" height="20" rx="5" fill="#F5C518" />
+      <rect x="1.5" y="1.5" width="29" height="29" rx="7" fill="none" stroke="currentColor" strokeWidth="2.6" />
       {FACES[face].map((pip) => {
         const [cx, cy] = PIP_POS[pip];
-        const center = pip === "c";
-        return <circle key={pip} cx={cx} cy={cy} r={center ? 2.576 : 2.3} fill={center ? "#D2372B" : "#1B1A17"} />;
+        return <circle key={pip} cx={cx} cy={cy} r={2.6} fill="currentColor" />;
       })}
     </svg>
   );

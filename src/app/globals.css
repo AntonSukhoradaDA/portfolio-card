@@ -71,29 +71,6 @@ a:focus-visible .dice {
   animation: dice-roll 650ms cubic-bezier(0.3, 0.7, 0.3, 1) 1;
 }
 
-/* Signature flourish: the stroke draws itself in on click. */
-.sig {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  transition: stroke-dashoffset 550ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.sig[data-signed="true"] {
-  stroke-dashoffset: 0;
-}
-
-/* Invisible ink: same colour as the page, readable only when selected. */
-.ink {
-  color: transparent;
-}
-.ink::selection {
-  background: #000;
-  color: #fff;
-}
-.dark .ink::selection {
-  background: #fff;
-  color: #000;
-}
-
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
