@@ -19,24 +19,28 @@ export default function Home() {
         i'm also building{" "}
         <a
           className={linkClass}
-          href="https://www.joinsona.app/"
+          href="https://monomakh.app/"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Sona app"
+          aria-label="Monomakh app"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 120 120"
+            viewBox="0 0 32 32"
             className="inline-block w-[0.9em] h-[0.9em] rounded-[0.2em] align-[-0.1em] mr-1"
             aria-hidden="true"
           >
-            <rect width="120" height="120" rx="28" fill="#000000" />
-            <circle cx="60" cy="60" r="48" fill="#ffffff" opacity="0.06" />
-            <path d="M 22 74 Q 60 30 98 74" stroke="#ffffff" strokeWidth="7" fill="none" strokeLinecap="round" />
+            <rect width="32" height="32" rx="7" fill="#1F4FD1" />
+            <rect x="6" y="6" width="20" height="20" rx="5" fill="#F5C518" />
+            <circle cx="11" cy="11" r="2.3" fill="#1B1A17" />
+            <circle cx="21" cy="11" r="2.3" fill="#1B1A17" />
+            <circle cx="16" cy="16" r="2.576" fill="#D2372B" />
+            <circle cx="11" cy="21" r="2.3" fill="#1B1A17" />
+            <circle cx="21" cy="21" r="2.3" fill="#1B1A17" />
           </svg>
-          sona
+          monomakh
         </a>{" "}
-        - a quiet space for when your mind is loud.
+        - an online property-trading board game to play with friends.
       </p>
       <ul className="flex flex-col gap-2 lg:gap-3 list-none">
         <li>
